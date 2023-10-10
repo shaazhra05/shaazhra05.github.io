@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Tugas Form 1</title>
+    </head>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td> : </td>
+                    <td><input type="text" id="Data_nama" placeholder="Masukkan Nama"></td>
+                </tr>
+                <tr>
+                    <td>Kelas</td>
+                    <td> : </td>
+                    <td><input type="text" id="Data_kelas" placeholder="Masukkan Kelas"></td>
+                </tr>
+                <tr>
+                    <td>Umur</td>
+                    <td> : </td>
+                    <td><input type="number" id="Data_umur" placeholder="Masukkan Umur"></td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td> : </td>
+                    <td><input type="text" id="Data_hobi" placeholder="Masukkan Hobi"></td>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+            <td><button onclick="TampilData()">Kirim</button></td>
+        </div>
+        <div id="content">
+            <div id="Hasil_nama"></div>
+            <div id="Hasil_kelas"></div>
+            <div id="Hasil_umur"></div>
+            <div id="Hasil_hobi"></div>
+        </div>
+        <script type="text/javascript">
+            function TampilData(){
+            var Nama = document.getElementById('Data_nama').value;
+            var Kelas = document.getElementById('Data_kelas').value;
+            var Umur = document.getElementById('Data_umur').value;
+            var Hobi = document.getElementById('Data_hobi').value;
+            console.log(Nama);
+            console.log(Kelas);
+            console.log(Umur);
+            console.log(Hobi);
+
+            alert("Nama : " + Nama + "\nKelas : " + Kelas + "\nUmur : " + Umur + "\nHobi : " + Hobi)
+            document.getElementById('Hasil_nama').innerHTML = "Nama : " + Nama;
+            document.getElementById('Hasil_kelas').innerHTML ="Kelas : " + Kelas;
+            document.getElementById('Hasil_umur').innerHTML = "Kelas : " + Umur;
+            document.getElementById('Hasil_hobi').innerHTML = "Hobi : " +  Hobi;
+            }
+        </script>
+    </body>
+</html>
